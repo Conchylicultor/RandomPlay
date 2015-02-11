@@ -1,0 +1,11 @@
+name: RandomPlay
+description: Select a video and play it in a new tab
+dependencies:
+  async_await:
+    git: git://github.com/dart-lang/async_await.git
+  chrome: any
+transformers:
+- chrome
+- async_await
+- $dart2js:
+    csp: true
